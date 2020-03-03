@@ -1,0 +1,11 @@
+<h1>Doctors</h1>
+<% @doctors.each do |doctor| %>
+<h2><%= link_to 'Dr. ' + doctor.name, doctor_path(doctor) %></h2>
+
+<div>
+<%@doctor = doctor%>
+<%= render 'appointments' %>
+</div>
+<% end %>
+
+
