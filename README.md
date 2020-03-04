@@ -2,6 +2,14 @@
 
 ## Objectives
 
+<!-- rails g model User username:string email:string --no-test-framework -->
+<!-- rails g model Post title:string content:text --no-test-framework --skip-routes -->
+rails g model Appointment appointment_datetime:datetime doctor_id:integer patient_id:integer --no-test-framework --skip-routes
+
+rails g model Doctor name:string department:string --no-test-framework --skip-routes
+
+rails g model Patient name:string age:integer --no-test-framework --skip-routes
+
 1. Construct a bi-directional has many through.
 2. Query for associations via the belongs_to, has_many, and has_many through associations.
 3. Iterate over associations in a view and display associated data for a primary instance.
