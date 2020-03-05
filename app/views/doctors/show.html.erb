@@ -1,0 +1,5 @@
+<%@appointments.each do |app|%>
+<%#binding.pry%>
+    <%=app.datetime(app.appointment_datetime)%>
+    <%=link_to app.patient.name, patient_path(app.patient)%>
+    <% end %>

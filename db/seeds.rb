@@ -14,6 +14,7 @@ marge = Patient.create({name: "Marge Simpson", age: 36})
 lisa = Patient.create({name: "Lisa Simpson", age: 8})
 maggie = Patient.create({name: "Maggie Simpson", age: 1})
 
+
 Appointment.create([
   {appointment_datetime: DateTime.new(2016, 03, 15, 18, 00, 0), patient: homer, doctor: hawkeye},
   {appointment_datetime: DateTime.new(2016, 01, 11, 20, 20, 0), patient: bart, doctor: meredith},
