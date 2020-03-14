@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Patients</h1>
+
+
+
+<ul>
+  <% @patients.each do |p| %>
+    <li> Name: <%= p.name %> Number of Appointments: <%= p.appointments.count %>
+         </li>
+
+    <% end %>
+
+</ul>
+<br>
+
+<%= link_to 'New Patient', new_patient_path %>
+<!--
+        <td><%#= patient.age %></td>
+        <td><%#= link_to 'Show', patient %></td>
+        <td><%#= link_to 'Edit', edit_patient_path(patient) %></td>
+        <td><%#= link_to 'Destroy', patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+-->
