@@ -1,0 +1,7 @@
+<h1><%= @patient.name%>, <%= @patient.age%></h1>
+
+
+<ul><% @patient.appointments.each.with_index(1) do |appt, index| %>
+    <li><p>Appointment <%= index %> time: <%= appt.appointment_datetime.strftime("%B %d, %Y") %> at <%= appt.appointment_datetime.strftime("%k:%M") %></p>
+    <p> <%= link_to appt.doctor.name, doctor_path(appt.doctor) %> </p> </li>
+<% end %></ul>
