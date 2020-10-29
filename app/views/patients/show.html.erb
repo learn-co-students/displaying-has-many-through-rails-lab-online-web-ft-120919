@@ -1,0 +1,13 @@
+<%= @patient.name %>
+
+<% @patient.appointments.each do |appointment| %>
+    <% @doctor_patient = @patient.doctors.find(appointment.doctor_id) %>
+    <%= appointment.appointment_datetime %>
+    <%= @doctor_patient.name %>
+    <% end %>
+
+    # patients has many appointments, and docs through
+    # appointments.
+    # 
+    # 
+    # 
